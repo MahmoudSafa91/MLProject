@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="static/styles/index.css">
+        <title>MY CAR ASSURANCE PREDICTION PROJECT</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Car Assurance Prediction</h1>
+            <p> test if you are qualified to be a member  of our insurance  program  <p>
+        </div>
+        <div>
+            <form action="/predict"  method="post">
+                <label for="CREDIT_SCORE">Score</label><br>
+                <input type="number" step="0.01" id="score" name="score"> <br><br>
+
+                <label for="VEHICLE_OWNERSHIP">OWNERSHIP</label><br>
+                <select id="owner" name="owner">
+                    <option value="o">0</option>
+                    <option value="1">1</option>
+                </select><br><br>
+                
+                <label for="ANNUAL_MILEAGE">MILEAGE</label><br>
+                <input type="number" id="mileage" name="mileage"><br><br>
+
+                <label for=" SPEEDING_VIOLATIONS">VIOLATIONS</label><br>
+                <input type="number" step="1" id="violations" name="violations"><br><br>
+
+                <label for="PAST_ACCIDENTS">PAST ACCIDENTS</label><br>
+                <select id="ACC" name="ACC">   <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select> <br><br>
+
+                <label for="AGE">AGE</label><br>
+                <input type="number" id="age" name="age"><br<br>
+
+                <label for="DRIVING_EXPERIENCE">DRIVING EXPERIENCE YEARS</label><br>
+                <input type="number" id="exp" name="exp"><br<br>
+
+                <label for="EDUCATION">EDUCATION</label><br>
+                <select id="education" name="education">
+                    <option value="high school">high school</option>
+                    <option value="university">university</option>
+                    <option value="none">none</option>
+                </select><br><br>
+
+                <label for="INCOME">INCOME</label><br>
+                <select id="income" name="income">
+                    <option value="upper class">upper class</option>
+                    <option value="middle class">middle class</option>
+                    <option value="poverty">poverty</option>
+                    <option value="working class">working class</option>
+                </select><br><br>
+
+
+                <input type="Submit" value="Predict"/>
+
+                  
+                
+            </form>
+
+
+        </div>
+       
+    </body>
+</html>
